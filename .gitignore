@@ -8,3 +8,4 @@ data/processed/*.parquet
 *.ipynb_checkpoints/
 .DS_Store
 .env
+nltk_data/

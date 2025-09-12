@@ -1,0 +1,165 @@
+id,sport,tournament,year,event,round,set,game,point,player1,player2,surface,source_url,commentary,summary,tags,text
+wim12_fed_mur_cp,lawn_tennis,Wimbledon,2012,Men's Singles Final,Final,4,10,Championship Point,Roger Federer,Andy Murray,Grass,,Federer steps up to the line and fires an ace down the T to seal the championship.,Federer clinches the Wimbledon 2012 title with an ace on championship point.,"Championship Point, Clutch Serve, Ace","0    Federer steps up to the line and fires an ace ...
+1    After a relentless rally, Federer rips a foreh...
+2    Ma Long dominates the final exchange and finis...
+3    Djokovic absorbs a barrage and flips defense t...
+Name: commentary, dtype: object . 0    Federer clinches the Wimbledon 2012 title with...
+1    Federer secures a crucial late fifth-set break...
+2    Ma Long closes out the 2019 Worlds with an ove...
+3    Djokovic turns defense into offense to break d...
+Name: summary, dtype: object . 0              Wimbledon
+1        Australian Open
+2    World Championships
+3                US Open
+Name: tournament, dtype: object . 0    Men's Singles Final
+1    Men's Singles Final
+2    Men's Singles Final
+3    Men's Singles Final
+Name: event, dtype: object . 0    Final
+1    Final
+2    Final
+3    Final
+Name: round, dtype: object . 0     Roger Federer
+1     Roger Federer
+2           Ma Long
+3    Novak Djokovic
+Name: player1, dtype: object . 0              Andy Murray
+1             Rafael Nadal
+2            Mattias Falck
+3    Juan Martin del Potro
+Name: player2, dtype: object . 0          Championship Point, Clutch Serve, Ace
+1    Momentum Shift, Forehand Winner, Epic Rally
+2            Championship Point, Dominant Finish
+3                Defense to Offense, Break Point
+Name: tags, dtype: object . 0     Grass
+1      Hard
+2    Indoor
+3      Hard
+Name: surface, dtype: object . 0    2012
+1    2017
+2    2019
+3    2018
+Name: year, dtype: object"
+ao17_fed_nad_bp,lawn_tennis,Australian Open,2017,Men's Singles Final,Final,5,10,Break Point,Roger Federer,Rafael Nadal,Hard,,"After a relentless rally, Federer rips a forehand winner down the line to break Nadal late in the fifth.",Federer secures a crucial late fifth-set break with a forehand winner vs Nadal.,"Momentum Shift, Forehand Winner, Epic Rally","0    Federer steps up to the line and fires an ace ...
+1    After a relentless rally, Federer rips a foreh...
+2    Ma Long dominates the final exchange and finis...
+3    Djokovic absorbs a barrage and flips defense t...
+Name: commentary, dtype: object . 0    Federer clinches the Wimbledon 2012 title with...
+1    Federer secures a crucial late fifth-set break...
+2    Ma Long closes out the 2019 Worlds with an ove...
+3    Djokovic turns defense into offense to break d...
+Name: summary, dtype: object . 0              Wimbledon
+1        Australian Open
+2    World Championships
+3                US Open
+Name: tournament, dtype: object . 0    Men's Singles Final
+1    Men's Singles Final
+2    Men's Singles Final
+3    Men's Singles Final
+Name: event, dtype: object . 0    Final
+1    Final
+2    Final
+3    Final
+Name: round, dtype: object . 0     Roger Federer
+1     Roger Federer
+2           Ma Long
+3    Novak Djokovic
+Name: player1, dtype: object . 0              Andy Murray
+1             Rafael Nadal
+2            Mattias Falck
+3    Juan Martin del Potro
+Name: player2, dtype: object . 0          Championship Point, Clutch Serve, Ace
+1    Momentum Shift, Forehand Winner, Epic Rally
+2            Championship Point, Dominant Finish
+3                Defense to Offense, Break Point
+Name: tags, dtype: object . 0     Grass
+1      Hard
+2    Indoor
+3      Hard
+Name: surface, dtype: object . 0    2012
+1    2017
+2    2019
+3    2018
+Name: year, dtype: object"
+tt_wc19_ma_long_final,table_tennis,World Championships,2019,Men's Singles Final,Final,7,4,Championship Point,Ma Long,Mattias Falck,Indoor,,Ma Long dominates the final exchange and finishes with a thunderous forehand to claim the title.,Ma Long closes out the 2019 Worlds with an overpowering forehand on match point.,"Championship Point, Dominant Finish","0    Federer steps up to the line and fires an ace ...
+1    After a relentless rally, Federer rips a foreh...
+2    Ma Long dominates the final exchange and finis...
+3    Djokovic absorbs a barrage and flips defense t...
+Name: commentary, dtype: object . 0    Federer clinches the Wimbledon 2012 title with...
+1    Federer secures a crucial late fifth-set break...
+2    Ma Long closes out the 2019 Worlds with an ove...
+3    Djokovic turns defense into offense to break d...
+Name: summary, dtype: object . 0              Wimbledon
+1        Australian Open
+2    World Championships
+3                US Open
+Name: tournament, dtype: object . 0    Men's Singles Final
+1    Men's Singles Final
+2    Men's Singles Final
+3    Men's Singles Final
+Name: event, dtype: object . 0    Final
+1    Final
+2    Final
+3    Final
+Name: round, dtype: object . 0     Roger Federer
+1     Roger Federer
+2           Ma Long
+3    Novak Djokovic
+Name: player1, dtype: object . 0              Andy Murray
+1             Rafael Nadal
+2            Mattias Falck
+3    Juan Martin del Potro
+Name: player2, dtype: object . 0          Championship Point, Clutch Serve, Ace
+1    Momentum Shift, Forehand Winner, Epic Rally
+2            Championship Point, Dominant Finish
+3                Defense to Offense, Break Point
+Name: tags, dtype: object . 0     Grass
+1      Hard
+2    Indoor
+3      Hard
+Name: surface, dtype: object . 0    2012
+1    2017
+2    2019
+3    2018
+Name: year, dtype: object"
+us18_djo_delpo_bp,lawn_tennis,US Open,2018,Men's Singles Final,Final,2,8,Break Point,Novak Djokovic,Juan Martin del Potro,Hard,,"Djokovic absorbs a barrage and flips defense to offense, drawing the error on break point.",Djokovic turns defense into offense to break del Potro in the US Open 2018 final.,"Defense to Offense, Break Point","0    Federer steps up to the line and fires an ace ...
+1    After a relentless rally, Federer rips a foreh...
+2    Ma Long dominates the final exchange and finis...
+3    Djokovic absorbs a barrage and flips defense t...
+Name: commentary, dtype: object . 0    Federer clinches the Wimbledon 2012 title with...
+1    Federer secures a crucial late fifth-set break...
+2    Ma Long closes out the 2019 Worlds with an ove...
+3    Djokovic turns defense into offense to break d...
+Name: summary, dtype: object . 0              Wimbledon
+1        Australian Open
+2    World Championships
+3                US Open
+Name: tournament, dtype: object . 0    Men's Singles Final
+1    Men's Singles Final
+2    Men's Singles Final
+3    Men's Singles Final
+Name: event, dtype: object . 0    Final
+1    Final
+2    Final
+3    Final
+Name: round, dtype: object . 0     Roger Federer
+1     Roger Federer
+2           Ma Long
+3    Novak Djokovic
+Name: player1, dtype: object . 0              Andy Murray
+1             Rafael Nadal
+2            Mattias Falck
+3    Juan Martin del Potro
+Name: player2, dtype: object . 0          Championship Point, Clutch Serve, Ace
+1    Momentum Shift, Forehand Winner, Epic Rally
+2            Championship Point, Dominant Finish
+3                Defense to Offense, Break Point
+Name: tags, dtype: object . 0     Grass
+1      Hard
+2    Indoor
+3      Hard
+Name: surface, dtype: object . 0    2012
+1    2017
+2    2019
+3    2018
+Name: year, dtype: object"

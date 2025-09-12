@@ -1,0 +1,22 @@
+# Global configuration
+backend: local              # 'local' or 'elasticsearch'
+index_name: tennis_moments  # for Elasticsearch
+
+local:
+  index_dir: data/index
+  bm25_pickle: bm25.pkl
+  ids_pickle: ids.json
+  faiss_index: faiss.index
+  embeddings_npy: embeddings.npy
+
+hybrid:
+  alpha_bm25: 0.6     # weight for BM25
+  beta_embed: 0.4     # weight for embeddings
+  top_k: 10
+
+embedding:
+  model_name: sentence-transformers/all-MiniLM-L6-v2
+  batch_size: 64
+
+ui:
+  title: "Sports Moment Retrieval (Tennis)"

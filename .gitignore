@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.idea/
+.vscode/
+data/index/
+data/processed/*.parquet
+*.ipynb_checkpoints/
+.DS_Store
+.env

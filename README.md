@@ -1,8 +1,14 @@
 # Sports Moment Retrieval Engine (Tennis)
 
-Retrieve iconic tennis moments (lawn & table) by partial commentary, paraphrases, or structured filters.
-Queries like _"Federer ace championship title 2012"_ return a **Moment Card** with match context and
-similar recommendations.
+Overview & Goal
+
+Build a hybrid IR/NLP system that retrieves iconic tennis moments (lawn & table) from commentary text using BM25 + Sentence‑BERT with a lightweight Gradio UI. Output is a Moment Card with match context, highlight summary, tags, and similar‑moment recommendations.
+
+Key outcomes:
+
+Working CLI + UI, hybrid search, small curated dataset, and evaluation with IR metrics.
+
+Clean, reproducible GitHub repo + final report/slides/video per UNT expectations
 
 ## Features
 - **Hybrid IR**: BM25 (local) + Sentence-BERT embeddings (semantic) with configurable weights

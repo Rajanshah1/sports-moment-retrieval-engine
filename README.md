@@ -92,6 +92,22 @@ python scripts/bulk_index_es.py --data data/processed/moments.csv --index tennis
 ```
 - You can then switch `config.yaml` → `backend: elasticsearch` and use the same UI/CLI.
 
+2. Run Elasticsearch in Docker (skip if not needed now)
+
+From your repo root:
+
+docker compose -f docker/docker-compose.elasticsearch.yml up -d
+
+
+This will pull and start an ES container (usually on http://localhost:9200).
+
+Check it’s running:
+
+curl http://localhost:9200
+
+
+You should see version JSON.
+
 ## Data Format
 Input CSV (raw) columns (example):
 - `id, sport, tournament, year, event, round, set, game, point, player1, player2, surface, source_url, commentary, summary, tags`

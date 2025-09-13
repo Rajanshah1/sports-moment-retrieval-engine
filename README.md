@@ -10,6 +10,42 @@ Working CLI + UI, hybrid search, small curated dataset, and evaluation with IR m
 
 Clean, reproducible GitHub repo + final report/slides/video per UNT expectations
 
+┌──────────────────┐
+│      Query       │  e.g., "Federer Wimbledon final championship point"
+└────────┬─────────┘
+         │
+         │
+ ┌───────▼────────┐                          ┌───────────────────────────────┐
+ │  Text Normalize │  lowercase, strip, etc.  │  Embedding Model (SBERT/BERT)│
+ └───────┬────────┘                          └──────────────┬────────────────┘
+         │                                                (vector)
+         │                                                   │
+ ┌───────▼──────────┐        BM25 scores           ┌─────────▼─────────┐
+ │  BM25 Retriever  │ ───────────────────────────▶ │  Embedding Index  │
+ │  (in-memory/ES)  │        top-K docs            │   (FAISS/Annoy)   │
+ └───────┬──────────┘                              └─────────┬─────────┘
+         │   top-K                                        top-K
+         │                                                  │
+         └─────────────┬────────────────────────────────────┘
+                       │   candidate union (dedup)
+                 ┌─────▼───────────────────────────┐
+                 │  Hybrid Scorer                  │
+                 │  score = α·BM25 + β·CosSim      │
+                 │  (normalize per-component)      │
+                 └─────┬───────────────────────────┘
+                       │
+                 top-N ranked
+                       │
+         ┌─────────────▼──────────────────┐
+         │ (Optional) Cross-Encoder BERT  │  re-rank top-N with a stronger model
+         │   score = CE(query, passage)   │  (slow but accurate on small N)
+         └─────────────┬──────────────────┘
+                       │
+                ┌──────▼───────┐
+                │  Results     │  Moment Cards (summary, tags, link)
+                └──────────────┘
+
+
 ## Features
 - **Hybrid IR**: BM25 (local) + Sentence-BERT embeddings (semantic) with configurable weights
 - **Moment Cards**: tournament, year, round, set/game, short highlight + narrative tags

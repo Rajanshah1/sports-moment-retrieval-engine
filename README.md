@@ -57,23 +57,23 @@ sports-moment-retrieval-engine/
 
 ```bash
 # 1) create & activate env (example with venv)
-python -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 
 # 2) install deps
 pip install -r requirements.txt
 
 # 3) Prepare data (converts raw CSV → processed/moments.csv)
-python scripts/prepare_data.py --input data/raw/sample_commentary.csv --output data/processed/moments.csv
+python3 scripts/prepare_data.py --input data/raw/sample_commentary.csv --output data/processed/moments.csv
 
 # 4) Build local indices (BM25 + FAISS)
-python -m smre.cli index-local --data data/processed/moments.csv --index-dir data/index
+python3 -m smre.cli index-local --data data/processed/moments.csv --index-dir data/index
 
 # 5) Search from CLI
-python -m smre.cli search --query "Federer ace championship title 2012" --k 5
+python3 -m smre.cli search --query "Federer ace championship title 2012" --k 5
 
 # 6) Launch UI
-python -m smre.cli serve --host 0.0.0.0 --port 7860
+python3 -m smre.cli serve --host 0.0.0.0 --port 7860
 ```
 
 ## Optional: Elasticsearch Backend

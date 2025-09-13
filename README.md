@@ -92,7 +92,7 @@ python scripts/bulk_index_es.py --data data/processed/moments.csv --index tennis
 ```
 - You can then switch `config.yaml` → `backend: elasticsearch` and use the same UI/CLI.
 
-2. Run Elasticsearch in Docker (skip if not needed now)
+Run Elasticsearch in Docker (skip if not needed now)
 
 From your repo root:
 

@@ -62,6 +62,9 @@ source .venv/bin/activate  # Windows: .venv\Scripts\activate
 
 # 2) install deps
 pip install -r requirements.txt
+or
+pip install -r requirements.txt -c constraints.txt
+
 
 # 3) Prepare data (converts raw CSV → processed/moments.csv)
 python3 scripts/prepare_data.py --input data/raw/sample_commentary.csv --output data/processed/moments.csv

@@ -9,3 +9,4 @@ data/processed/*.parquet
 .DS_Store
 .env
 nltk_data/
+data/external/

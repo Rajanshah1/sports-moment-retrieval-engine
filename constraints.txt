@@ -1,0 +1,27 @@
+# Core numeric/science
+numpy==1.26.4
+scipy==1.11.4
+scikit-learn==1.4.2
+pandas==2.2.2
+
+# IR / NLP
+rank-bm25==0.2.2
+nltk==3.9.1
+transformers==4.45.2
+
+# Sentence embeddings + deps
+sentence-transformers==3.0.1
+torch==2.3.1
+
+# Vector index
+faiss-cpu==1.8.0.post5
+
+# App / CLI / UI
+gradio==4.44.0
+click==8.1.7
+rich==13.7.1
+tqdm==4.66.4
+python-dotenv==1.0.1
+PyYAML==6.0.1
+packaging==24.0
+numpy<2

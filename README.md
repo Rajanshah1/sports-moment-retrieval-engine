@@ -1,6 +1,5 @@
 # Sports Moment Retrieval Engine (Tennis)
 
-<<<<<<< HEAD
 Overview & Goal
 
 Build a hybrid IR/NLP system that retrieves iconic tennis moments (lawn & table) from commentary text using BM25 + Sentence‑BERT with a lightweight Gradio UI. Output is a Moment Card with match context, highlight summary, tags, and similar‑moment recommendations.
@@ -13,8 +12,7 @@ Clean, reproducible GitHub repo + final report/slides/video per UNT expectations
 
 
 =======
-Find iconic tennis moments (e.g., _“Federer Wimbledon final championship point”_) using a **hybrid** search that combines **BM25** (exact keywords) and **sentence‑embedding similarity** (semantic meaning). The system returns concise **Moment Cards** with summary, tags, and (optionally) a link to the source.
->>>>>>> a53f8c2 (Ignore external data repos)
+
 
 ---
 
@@ -252,7 +250,6 @@ python -m smre.cli serve --host 0.0.0.0 --port 7860
 **`ModuleNotFoundError: No module named 'smre'`**  
 → Run from project root and install the package:
 ```bash
-<<<<<<< HEAD
 # 1) create & activate env (example with venv)
 python3 -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
@@ -277,7 +274,7 @@ python3 -m smre.cli serve --host 0.0.0.0 --port 7860
 =======
 pip install -e .
 # or: PYTHONPATH=src python -m smre.cli ...
->>>>>>> a53f8c2 (Ignore external data repos)
+
 ```
 
 **`No module named 'yaml'`**  
@@ -293,7 +290,7 @@ pd.read_csv(path, low_memory=False)
 ```
 and normalize columns with `astype("string").fillna("")`.
 
-<<<<<<< HEAD
+
 
 
 Run Elasticsearch in Docker (skip if not needed now)
@@ -318,7 +315,7 @@ Input CSV (raw) columns (example):
 =======
 **`ResolutionImpossible` / torch not found**  
 → Use Python **3.11** and the pinned **constraints.txt** above.
->>>>>>> a53f8c2 (Ignore external data repos)
+
 
 **`zsh: command not found: python`**  
 → Use `python3` or ensure your venv is activated: `source .venv/bin/activate`.
